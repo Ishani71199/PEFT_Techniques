@@ -11,7 +11,7 @@ To know more about these click on respective PEFT techniques: [Simple FT](https:
 **data_preprocessing.py:** Includes utility functions for dataset handling and preprocessing.
 It performs data loading, text tokenization, and data loader configuration.
 
-**modeling/:** Contains object-oriented implementations of the three PEFT strategies:
+**modeling/:** Contains implementations of the three PEFT strategies:
 -	Simple Fine-Tuning
 -	Adapter Modules
 -	LoRA (Low-Rank Adaptation)
@@ -35,7 +35,7 @@ Run the project using the command: python finetuning.py
 **Model:** [distilbert/distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased). DistilBERT is a smaller, faster, and lighter version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face. It is useful for Text classification.
 
 ## 📈 Results and some Insights:
-**1) Percentage pof trainable parameters:**
+**1) Percentage of trainable parameters:**
 
 ![image](https://github.com/user-attachments/assets/73458646-7d5e-4ed3-82f4-b85fb17a9197)
 
