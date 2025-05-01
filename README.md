@@ -14,7 +14,9 @@ It performs data loading, text tokenization, and data loader configuration.
 -	Simple Fine-Tuning
 -	Adapter Modules
 -	LoRA (Low-Rank Adaptation)
+  
 **evaluation.py:** Provides helper functions for recording experiment outcomes and generating visualizations.
+
 **finetuning.py:** The central script responsible for executing the fine-tuning experiments.
 
 ## 📦 Usage
