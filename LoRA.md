@@ -1,4 +1,5 @@
 Instead of updating all weights, it inserts trainable low-rank matrices (A and B) into the attention layers. The original pre-trained weights are frozen. This significantly reduces the number of trainable parameters while preserving performance.
+
 ![image](https://github.com/user-attachments/assets/f85d7f05-8422-4a1f-82c9-639c5d03e2c4)
 
 ![image](https://github.com/user-attachments/assets/d5b33f38-bb30-4662-a122-2de51d273bf9)
