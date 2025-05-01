@@ -1,8 +1,25 @@
 # PEFT for LLMs: Techniques and Comparative Insights
 A detailed implementation of 3 popular PEFT (Parameter Efficient Fine-Tuning) techniques and their comparison. The main focus of this project is to understand the mechanics behind these methods.
-### 3 techniques (core idea):
+## 3 techniques (core idea):
 -	**Simple Fine-Tuning:** Unfreeze and update only the final two layers, including the classification head.
 -	**Adapter-Based Fine-Tuning:** Integrate lightweight adapter modules within each transformer block to enable efficient task-specific adaptation.
 -	**LoRA (Low-Rank Adaptation):** Inject low-rank decomposition matrices into the model's weight updates, allowing parameter-efficient fine-tuning across the network.
   
-To know more about these click on respective PEFT techniques: [Simple FT](https://github.com/Ishani71199/PEFT_Techniques/blob/main/Simple%20Fine%20Tuning.md/), [adapter FT](https://github.com/Ishani71199/PEFT_Techniques/blob/main/Adapter%20layer.md), LoRA
+To know more about these click on respective PEFT techniques: [Simple FT](https://github.com/Ishani71199/PEFT_Techniques/blob/main/Simple%20Fine%20Tuning.md/), [adapter FT](https://github.com/Ishani71199/PEFT_Techniques/blob/main/Adapter%20layer.md), [LoRA](https://github.com/Ishani71199/PEFT_Techniques/blob/main/LoRA.md)
+
+## Project Structure:
+**data_preprocessing.py:** Includes utility functions for dataset handling and preprocessing.
+It performs data loading, text tokenization, and data loader configuration.
+**modeling/:** Contains object-oriented implementations of the three PEFT strategies:
+-	Simple Fine-Tuning
+-	Adapter Modules
+-	LoRA (Low-Rank Adaptation)
+**evaluation.py:** Provides helper functions for recording experiment outcomes and generating visualizations.
+**finetuning.py:** The central script responsible for executing the fine-tuning experiments.
+
+## Usage
+Install the packages: pip install -r requirements.txt
+
+Use a GPU for faster training. 
+
+Run the project using the command: python finetuning.py
