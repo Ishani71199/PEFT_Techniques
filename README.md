@@ -34,7 +34,18 @@ Run the project using the command: python finetuning.py
 **Model:** [distilbert/distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased). DistilBERT is a smaller, faster, and lighter version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face. It is useful for Text classification.
 
 ## 📈 Results and some Insights:
+**1) Percentage pof trainable parameters:**
+![image](https://github.com/user-attachments/assets/73458646-7d5e-4ed3-82f4-b85fb17a9197)
 
+All these techniques train less than 1% of the model’s parameters, making them highly parameter-efficient.
+
+**2) Comparing Training Accuracy:**
+![image](https://github.com/user-attachments/assets/060f57eb-ee03-482c-bc93-4d73d54fc3b4)
+
+Adapter and LoRA achieved the best accuracies with 94.8938% and 93.0716% respectively.
+
+**3) Comparing Training Time:**
+![image](https://github.com/user-attachments/assets/bb8c9629-a084-4a02-a7ad-a6643cc37f55)
 
 ## 🤝 Reference:
 [https://lightning.ai/pages/community/article/understanding-llama-adapters/](https://lightning.ai/pages/community/article/understanding-llama-adapters/)
