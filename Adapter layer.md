@@ -9,6 +9,7 @@ Forcing Compact Representations = Better Generalization
 When you reduce the dimensionality, the model can't memorize or overfit to noise. It is forced to learn the essential task-specific features.
 
  - **Parameter Efficiency**
+   
 Suppose your model has 768 hidden units.
 A full linear layer would have 768 x 768 = 589,824 weights.
 But an adapter might reduce to 64:
