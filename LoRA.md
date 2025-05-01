@@ -5,8 +5,10 @@ Instead of updating all weights, it inserts trainable low-rank matrices (A and B
 ![image](https://github.com/user-attachments/assets/d5b33f38-bb30-4662-a122-2de51d273bf9)
 ### Why 2 matrices (A & B) are used in LoRA instead of one?
 Instead of directly learning a full-rank weight update ΔW (which would require a large number of parameters), LoRA approximates it using a low-rank decomposition:
+
 ![image](https://github.com/user-attachments/assets/1b432e72-3812-428f-bf4b-2c5f82e2aa3f)
 where:
+
 ![image](https://github.com/user-attachments/assets/0027462f-0c42-4c63-ae8c-66009384454e)
 
 ### Benefits of Using Two Low-Rank Matrices
