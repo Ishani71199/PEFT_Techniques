@@ -26,7 +26,9 @@ Run the project using the command: python finetuning.py
 
 ## 📝 Details
 **PEFT Techniques:** Simple Fine-Tuning, Adapter Layers, LoRA
+
 **Dataset:** [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb). This is a dataset for binary sentiment classification. (Binary Text Classification)
+
 **Model:** [distilbert/distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased). DistilBERT is a smaller, faster, and lighter version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face. It is useful for Text classification.
 
 ## 📈 Results and some Insights:
