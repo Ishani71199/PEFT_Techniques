@@ -1,6 +1,6 @@
 # 🚀 PEFT for LLMs: Techniques and Comparative Insights
 A detailed implementation of 3 popular PEFT (Parameter Efficient Fine-Tuning) techniques and their comparison. The main focus of this project is to understand the mechanics behind these methods.
-## 3 Techniques (core idea):
+## 🎯 3 Techniques (core idea):
 -	**Simple Fine-Tuning:** Unfreeze and update only the final two layers, including the classification head.
 -	**Adapter-Based Fine-Tuning:** Integrate lightweight adapter modules within each transformer block to enable efficient task-specific adaptation.
 -	**LoRA (Low-Rank Adaptation):** Inject low-rank decomposition matrices into the model's weight updates, allowing parameter-efficient fine-tuning across the network.
@@ -32,7 +32,7 @@ Run the project using the command: python finetuning.py
 ## 📈 Results and some Insights:
 
 
-## Reference:
+## 🤝 Reference:
 [https://lightning.ai/pages/community/article/understanding-llama-adapters/](https://lightning.ai/pages/community/article/understanding-llama-adapters/)
 [https://lightning.ai/pages/community/article/lora-llm/](https://lightning.ai/pages/community/article/lora-llm/)
 [https://blog.gopenai.com/fine-tuning-llms-efficiently-9353d3b9a6d7](https://blog.gopenai.com/fine-tuning-llms-efficiently-9353d3b9a6d7)
