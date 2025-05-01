@@ -17,13 +17,15 @@ But an adapter might reduce to 64:
 After transformation, the adapter output is added back to the original hidden state. So if the **adapter is zero-initialized or disabled**, the model behaves exactly like the frozen base model. This makes adapters non-destructive and easy to plug in.
 
 ### Why Are Adapter Layers Zero-Initialized?
-<u>1. Stability in the Beginning </u>
-If you initialize the adapter weights to zero, the initial output of the adapter is also zero. The adapter effectively does nothing initially.
-The full model output = base model output, untouched.
-This is especially important in PEFT (Parameter-Efficient Fine-Tuning), where the base model is frozen. You don’t want the adapter to harm its predictions from the start.
-2. Gradual Learning
-The adapter starts from a non-intrusive state and slowly learns how to adjust the base model output during fine-tuning.
-This is very similar to residual learning — the adapter learns a correction, not a full rewrite.
-Do All Implementations Use Zero Init?
-Not necessarily.
+
+### 1. Stability in the Beginning
+- If you initialize the adapter weights to zero, the initial output of the adapter is also zero. The adapter effectively does nothing initially.
+- The full model output = base model output, untouched.
+- This is especially important in PEFT (Parameter-Efficient Fine-Tuning), where the base model is frozen. You don’t want the adapter to harm its predictions from the start.
+### 2. Gradual Learning
+- The adapter starts from a non-intrusive state and slowly learns how to adjust the base model output during fine-tuning.
+- This is very similar to residual learning — the adapter learns a correction, not a full rewrite.
+
+### Do All Implementations Use Zero Init?
+**Not necessarily.**
 Some frameworks (e.g. Hugging Face's adapter-transformers) do use zero init. Others may use Xavier (Glorot) or normal distribution to avoid slow learning.
