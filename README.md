@@ -36,7 +36,9 @@ Run the project using the command: python finetuning.py
 
 ## 🤝 Reference:
 [https://lightning.ai/pages/community/article/understanding-llama-adapters/](https://lightning.ai/pages/community/article/understanding-llama-adapters/)
+
 [https://lightning.ai/pages/community/article/lora-llm/](https://lightning.ai/pages/community/article/lora-llm/)
+
 [https://blog.gopenai.com/fine-tuning-llms-efficiently-9353d3b9a6d7](https://blog.gopenai.com/fine-tuning-llms-efficiently-9353d3b9a6d7)
 
 
