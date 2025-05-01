@@ -1,6 +1,6 @@
 Adapter Layers are small neural network modules that are inserted inside the model, usually after each Transformer block. During fine-tuning, only the adapter layers are trained — the rest of the original model is frozen. So the model learns new tasks without forgetting old knowledge.
 
-### Structure
+### Structure:
 ![image](https://github.com/user-attachments/assets/730126b2-fd2e-4e62-953b-9e4f42ca8724)
 
 ### Why Use a Bottleneck in Adapter Layers?
