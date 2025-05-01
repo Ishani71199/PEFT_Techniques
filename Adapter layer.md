@@ -5,6 +5,7 @@ Adapter Layers are small neural network modules that are inserted inside the mod
 
 ### Why Use a Bottleneck in Adapter Layers?
 Forcing Compact Representations = Better Generalization
+
 When you reduce the dimensionality, the model can't memorize or overfit to noise. It is forced to learn the essential task-specific features.
 
  - **Parameter Efficiency**
